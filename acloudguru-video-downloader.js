@@ -1,4 +1,4 @@
-// const fs = require("fs");
+// Just copy and paste this in the chrome console, and it should download your video
 
 function getVideoName() {
   // The first 2 heading elements give the chapter number and the title
