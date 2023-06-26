@@ -113,8 +113,8 @@ function getVideoName() {
 }
 
 async function downloadUrl(url, chapter, title) {
-  return new Promise((res, rej) => {
-    fetch(url)
+  // return new Promise((res, rej) => {
+    await fetch(url)
       .then((res) => res.blob())
       .then((file) => {
         const tempUrl = URL.createObjectURL(file);
@@ -138,7 +138,7 @@ async function downloadUrl(url, chapter, title) {
       .catch((err) => {
         rej(err);
       });
-  });
+  // });
 }
 
 /**
@@ -206,6 +206,14 @@ function openAndDownloadVideo() {
 
 // openAndDownloadVideo();
 
+async function openPageAndDownloadVideo(href) {
+  const tempWindow = window.open(href);
+  tempWindow.test = () => {console.log('test')}
+  tempWindow.onload(() => {
+    console.log('loaded');
+  });
+}
+
 async function iterator() {
   // Should iterate through all the list elements here.
   for await (const href of downloadURLs) {
@@ -222,7 +230,7 @@ async function iterator() {
       )[0].firstChild.innerText.toLowerCase();
       const chapterCap = `${chapter[0].toUpperCase()}${chapter.slice(1)}`;
       const title = anchorEl.getElementsByTagName("span")[0].innerText;
-      await downloadUrl(href, chapterCap, title);
+      await openPageAndDownloadVideo(href, chapterCap, title);
     }
   }
 }
