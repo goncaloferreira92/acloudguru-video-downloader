@@ -1,6 +1,6 @@
 // Just copy and paste this in the chrome console, and it should download your video
 
-import downloadURLs from './downloadUrls';
+import downloadURLs from "./downloadUrls";
 
 function getVideoName() {
   // The first 2 heading elements give the chapter number and the title
@@ -39,30 +39,30 @@ async function downloadUrl(url, chapter, title) {
   // });
 }
 
-/**
- *
- * @param {HTMLDivElement} labButton
- */
-function labProcess(labButton) {
-  labButton.firstChild.click();
-  window.addEventListener("hashchange", () => {
-    window.addEventListener("onload", () => {
-      console.log("window moved and changed");
-    });
-  });
-}
+// /**
+//  *
+//  * @param {HTMLDivElement} labButton
+//  */
+// function labProcess(labButton) {
+//   labButton.firstChild.click();
+//   window.addEventListener("hashchange", () => {
+//     window.addEventListener("onload", () => {
+//       console.log("window moved and changed");
+//     });
+//   });
+// }
 
-/**
- *
- * @param {HTMLDivElement} quizButton
- */
-function quizProcess(quizButton) {
-  // Do whatever
-}
+// /**
+//  *
+//  * @param {HTMLDivElement} quizButton
+//  */
+// function quizProcess(quizButton) {
+//   // Do whatever
+// }
 
-const LAB_BUTTON_CONTENT = "Start Lab";
-const QUIZ_BUTTON_CONTENT = "Start quiz";
-const LAB_ATTRIBUTE_KEY = "data-testid"; // Custom div's attribute that spots the lab's icon
+// const LAB_BUTTON_CONTENT = "Start Lab";
+// const QUIZ_BUTTON_CONTENT = "Start quiz";
+// const LAB_ATTRIBUTE_KEY = "data-testid"; // Custom div's attribute that spots the lab's icon
 
 function openAndDownloadVideo() {
   // Detect if it is lab or quiz
@@ -102,26 +102,99 @@ function openAndDownloadVideo() {
   }
 }
 
-// openAndDownloadVideo();
+
+const openWindowFunction = `
+
+  function getVideoName() {
+    // The first 2 heading elements give the chapter number and the title
+    const headingElements = document.getElementsByClassName("chakra-heading");
+    const chapter = headingElements[0].innerHTML;
+    const title = headingElements[1].innerHTML;
+    return { chapter, title };
+  }
+
+  async function downloadUrl(url, chapter, title) {
+      await fetch(url)
+        .then((res) => {
+          console.log('1');
+          return res.blob();
+        })
+        .then((file) => {
+          console.log("2");
+          const tempUrl = URL.createObjectURL(file);
+          const aTag = document.createElement("a");
+          aTag.href = tempUrl;
+
+          console.log("3");
+          // // Get video name
+          // if (chapter && title) {
+          //   aTag.download = "test.mp4";
+          // } else {
+          //   const { chapter, title } = getVideoName();
+          //   aTag.download = "test.mp4";
+          // }
+          aTag.download = 'test.mp4';
+
+          console.log('4');
+  
+          document.body.appendChild(aTag);
+          aTag.click();
+          URL.revokeObjectURL(tempUrl);
+          aTag.remove();
+          window.alert("done");
+          res(true);
+        })
+        .catch((err) => {
+          rej(err);
+        });
+  }
+  
+  const LAB_BUTTON_CONTENT = "Start Lab";
+  const QUIZ_BUTTON_CONTENT = "Start quiz";
+  const LAB_ATTRIBUTE_KEY = "data-testid"; // Custom div's attribute that spots the lab's icon
+
+  function openAndDownloadVideo() {
+    // All others are just videos
+    const videoElement = document.getElementsByTagName("video")[0];
+    const url = videoElement.src;
+  
+    if (url) {
+      downloadUrl(url);
+    }
+  }
+
+setTimeout(() => {
+  openAndDownloadVideo();
+}, 15000);
+
+`
+
+function createScriptAttribute() {
+  const fileref = document.createElement("script");
+  fileref.setAttribute("type", "text/javascript");
+  fileref.innerHTML = openWindowFunction;
+  return fileref;
+}
 
 async function openPageAndDownloadVideo(href) {
-  const tempWindow = window.open(href);
-  tempWindow.test = () => {console.log('test')}
-  tempWindow.onload(() => {
-    console.log('loaded');
-  });
+  const win = await window.open(href);
+  const fileref = createScriptAttribute();
+  win.document.head.appendChild(fileref);
+  // // const tempWindow =
+  //   window.location = (href, '_blank');
+  // tempWindow.onload(() => {
+  //   console.log('loaded');
+  // });
 }
 
 async function iterator() {
   // Should iterate through all the list elements here.
   for await (const href of downloadURLs) {
     const anchorEls = document.getElementsByTagName("a");
-    const anchorEl = Array.from(anchorEls).find((el) => el.href === href);
-    if (
-      anchorEl &&
-      anchorEl instanceof HTMLAnchorElement &&
-      !anchorEl.hasAttribute("data-testid")
-    ) {
+    const anchorEl = Array.from(anchorEls).find(
+      (el) => el.href === href && !el.hasAttribute("data-testid")
+    );
+    if (anchorEl && anchorEl instanceof HTMLAnchorElement) {
       const parentNode = anchorEl.parentNode;
       const chapter = Array.from(
         parentNode.childNodes
