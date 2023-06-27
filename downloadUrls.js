@@ -1,4 +1,4 @@
-[
+export default downloadURLs = [
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/63154906-87f7-430b-9b7d-0a78017b6948/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/0a2db8f4-b24f-4cbf-9625-185c718280ee/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/68a890b2-009f-405e-887e-46d137f240c9/watch",
@@ -13,8 +13,6 @@
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/4f28f633-ed16-44fa-bb77-e9969fc19414/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/74cb86b5-7310-4483-84c7-fa47d68679c5/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/cb2cb6de-8dc9-4b2d-9897-b395e733b68a/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/c11ca4ba-f942-4a5b-9c75-ad3ff8134a97/lab/c11ca4ba-f942-4a5b-9c75-ad3ff8134a97",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/a21a1644-a8e1-4760-a4e0-545ac1fc4c82/e9ea96c8-7449-42de-93cc-747101a2834b/quiz/e9ea96c8-7449-42de-93cc-747101a2834b",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/7d3c6ea2-9166-454a-9db9-52136f09581c/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/3bad35a5-87d1-4ff3-b09a-6feabda134ad/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/5d63beda-03b1-49e5-80bb-262c8aa3da22/watch",
@@ -36,20 +34,19 @@
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/76838bdb-1171-41ce-ab3d-8edd4e8a73bb/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/c1e8714a-5d39-489f-8126-401df064329b/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/00f07b50-7a37-4844-9b8a-950481d6531c/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/c905b18a-0d42-4cca-b189-b6a2364ddb6f/2fb29c34-42ca-4ec9-8c22-9b92d9b45242/quiz/2fb29c34-42ca-4ec9-8c22-9b92d9b45242",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/08fde6c3-f71d-40e8-afe4-e369c5d0f4cd/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/26913ee8-789a-4b11-abfe-050856553ac7/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/e3662bd5-361e-43a7-9afc-c2c2f5c921e2/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/d34f61ea-ed7f-4ef0-b367-bbb2bd812f2d/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/70913a92-b287-4dc7-8639-74b04921be2a/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/8a73c444-d5a3-461a-81fd-0cb4f0a56103/lab/8a73c444-d5a3-461a-81fd-0cb4f0a56103",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/21359b7a-a8b4-4d08-8e30-48623869199f/db7936f1-081c-4f77-8323-7018832c08a6/quiz/db7936f1-081c-4f77-8323-7018832c08a6",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/ecd4ac32-285e-4f44-959c-103d19f14319/aa0609cc-04c1-44d7-b49c-448b203d8f42/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/ecd4ac32-285e-4f44-959c-103d19f14319/22f9375a-5fa5-4e5e-b8c5-bb19fe1dc9c7/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/ecd4ac32-285e-4f44-959c-103d19f14319/0160a74c-6e67-4dd5-96d1-524fcbae60b1/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/ecd4ac32-285e-4f44-959c-103d19f14319/7763b4f4-5c01-4048-b471-b2ba2df75373/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/ecd4ac32-285e-4f44-959c-103d19f14319/f3266a1b-5741-48a0-aade-8fbfdfc9f0f1/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/ecd4ac32-285e-4f44-959c-103d19f14319/340fa3c4-cfd8-45dc-907b-babe99ec369b/quiz/340fa3c4-cfd8-45dc-907b-babe99ec369b",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/75d34e5d-40fd-4b98-aa27-17a3afd8a97a/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/da2143d2-bc9c-420c-ac3d-54998487e3e2/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/06266080-dd65-4a45-b033-c2d46309db5c/watch",
@@ -66,8 +63,7 @@
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/9241c6c9-9f4b-41b2-aae6-04459529e5cf/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/a846c998-4b14-4d03-8ba2-25722b8d0c68/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/ce53fc99-11d1-4d1f-81d2-d5b60c0996bc/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/df7ec6e9-8407-4961-b4bd-2c85d30fd3b4/lab/df7ec6e9-8407-4961-b4bd-2c85d30fd3b4",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/6960ca74-1766-4151-a4dc-d36cec5cd68e/cfab6a3e-2a2b-4bd5-af02-8607bce7a3f9/quiz/cfab6a3e-2a2b-4bd5-af02-8607bce7a3f9",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/a8a1d316-b453-44f4-8b19-1f3841f2f5f2/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/190fc1b9-cfd9-4c0b-9b97-1ec4248c8138/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/94339c41-a727-4aa2-8f88-f55e32865eb7/watch",
@@ -77,13 +73,13 @@
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/ce085180-89da-4f6c-9d4f-a15aafce7c0c/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/5028c3a1-c1c8-4ec9-82ce-b37958b6e633/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/8d17e448-ad82-4416-94e3-d812c7417031/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/1c7cb260-b6d6-4daf-9a0e-1ce05c4d7426/9a8d6325-004d-466f-8f86-8e8220c08420/quiz/9a8d6325-004d-466f-8f86-8e8220c08420",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/8a8c4dbd-05f7-4fd6-8dc5-fecf6cae66b2/0974ac22-e297-4b49-b92b-e4446ba55dce/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/8a8c4dbd-05f7-4fd6-8dc5-fecf6cae66b2/d1fd6e44-5a71-420d-8a3b-224ed9da7afc/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/8a8c4dbd-05f7-4fd6-8dc5-fecf6cae66b2/8a7c12e3-7dc6-4a01-80a5-7e5e4efde99e/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/8a8c4dbd-05f7-4fd6-8dc5-fecf6cae66b2/06e1051b-ff51-4ff6-afae-da3c61df1b20/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/8a8c4dbd-05f7-4fd6-8dc5-fecf6cae66b2/f0d5ec36-b92d-4252-8f70-ab85bc63f841/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/8a8c4dbd-05f7-4fd6-8dc5-fecf6cae66b2/6464f998-07d3-49ca-899e-9832e3f9b118/quiz/6464f998-07d3-49ca-899e-9832e3f9b118",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/31c4b36e-331b-4744-a5fa-ded9c640bb2e/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/e3fa4185-4b1d-4631-af64-37412ba2e986/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/fd8169b2-3079-484e-85df-e8c2336b655a/watch",
@@ -93,20 +89,15 @@
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/c07ebb1b-6525-492c-907f-5299ec3bceed/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/70bc89a2-29be-4d19-9a33-935517dcb72f/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/4c99d268-74eb-457a-a4d4-d8535aac9927/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/31d7b2a1-17fa-44a4-87dc-a88315eec16e/af17da41-7df6-47ff-996a-151086d50280/quiz/af17da41-7df6-47ff-996a-151086d50280",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/4b152967-3f9e-4750-b4cf-33b16206b427/520139ff-f9fa-4f23-ab44-254407c93b5b/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/4b152967-3f9e-4750-b4cf-33b16206b427/5b041440-0f65-4b98-86d6-4de1406bbea6/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/4b152967-3f9e-4750-b4cf-33b16206b427/94957b98-8232-496d-8c02-52c82692f2b9/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/4b152967-3f9e-4750-b4cf-33b16206b427/b1c256ba-b19a-4b21-ae58-d14a60ebcb24/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/4b152967-3f9e-4750-b4cf-33b16206b427/dcab25d5-6119-4abd-b38d-94c23e7fef4b/quiz/dcab25d5-6119-4abd-b38d-94c23e7fef4b",
+   
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/7961fb79-fb18-4eca-a2ab-a0c5deac4d9c/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/105b147e-7832-439a-9486-c2569672e1c7/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/671d7684-5b91-422d-99e1-8b09c40ef296/watch",
      "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/71d85e84-dbe3-45d3-86e4-942ba67aa7c4/watch",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/67be35b9-2276-4357-aa8a-525031d0126c/quiz/67be35b9-2276-4357-aa8a-525031d0126c",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/2b6e8c45-e4a0-41d7-85cc-3fea3c225772/quiz/2b6e8c45-e4a0-41d7-85cc-3fea3c225772",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/bc504700-412e-44cf-b82f-988ba7aaf897/quiz/bc504700-412e-44cf-b82f-988ba7aaf897",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/1c153a74-4256-4b89-909c-26a5d61777ac/quiz/1c153a74-4256-4b89-909c-26a5d61777ac",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/370ffd3a-a089-48b3-bf93-9489451dba10/919658ec-9cf5-4a04-9896-e17dc73fb6ee/quiz/919658ec-9cf5-4a04-9896-e17dc73fb6ee",
-     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/50c62423-ddca-4505-b2ac-2f05caa23c7c/b60de242-3b58-4d3f-b533-f64e87c762d6/watch"
-]
+     "https://learn.acloud.guru/course/certified-solutions-architect-associate/learn/50c62423-ddca-4505-b2ac-2f05caa23c7c/b60de242-3b58-4d3f-b533-f64e87c762d6/watch",
+   ];
