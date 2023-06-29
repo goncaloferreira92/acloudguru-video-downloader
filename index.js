@@ -1,6 +1,9 @@
 // Just copy and paste this in the chrome console, and it should download your video
 
-import downloadURLs from "./downloadUrls";
+// Execute the getUrls.js
+const downloadURLs = [
+  "here you put the urls that you need",
+];
 
 const openWindowFunction = `
 
